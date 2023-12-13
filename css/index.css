@@ -1,0 +1,22 @@
+/*
+ELVIRA ERICSSON
+Miniprojekt 3 - Rest Countries
+*/
+
+form {
+    margin-top: 20px;
+}
+
+button {
+    margin-left: 10px;
+}
+
+#container {
+    margin-top: 30px;
+    border: 1px solid;
+    border-radius: 10px;
+}
+
+#errorMessage {
+    margin-top: 20px;
+}

@@ -1,0 +1,29 @@
+<!--
+    ELVIRA ERICSSON
+    Miniprojekt 3 - Rest countries
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/underscore@1.13.6/underscore.js" defer></script>
+    <script src="./js/index.js" defer></script>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="shortcut icon" href="./favicon/rock-kopia.png" type="image/x-icon">
+    <title>Rest Countries</title>
+</head>
+<body>
+    <form id="form">
+        <input type="text" id="countryInput">
+        <input type="radio" id="checkbox-1" name="nameOrLanguage" value="name">
+        <label for="checkbox-1">Name</label>
+        <input type="radio" id="checkbox-2" name="nameOrLanguage" value="lang">
+        <label for="checkbox-2">Language</label>
+        <button type="submit">Get countries</button>
+    </form>
+    <div id="errorMessage"></div>
+    <div id="container"></div>
+</body>
+</html>
