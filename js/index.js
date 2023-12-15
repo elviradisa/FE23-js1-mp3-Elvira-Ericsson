@@ -36,7 +36,8 @@ function displayCountries (countries) {
     containerDiv.style.display = 'block';
 
     const sortedArray = _.sortBy(countries, 'population'); //EN NY ARRAY SKAPAS FÖR ATT SPARA ALLA VÄRDEN 'POPULATION' FRÅN ARRAYEN 'COUNTRIES' I RANGORDNING
-   
+    //https://underscorejs.org/#sortBy
+
     for (const country of sortedArray) { //FÖR VARJE VÄRDE I ARRAYEN SKAPAS EN DIV SOM INNEHÅLLER OFFICIELLT NAMN, SUBREGION OSV...
         const divForCountries = document.createElement('div');
         divForCountries.style.border = '1px solid';
@@ -55,6 +56,7 @@ function displayCountries (countries) {
     }
 }
 
+// lägg till 'om statuskod är 404 - skriv ut nätverksfel-meddelande'
 function displayError (message) { //OM ERROR UPPSTÅR I .catch SKA DENNA FUNKTIONEN UTFÖRAS
     const errorMessage = document.querySelector('#errorMessage');
     errorMessage.textContent = message; //ERRORMEDDELANDE VISAS PÅ SIDAN
